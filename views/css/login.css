@@ -1,0 +1,182 @@
+input[type=text], 
+input[type=email],
+input[type=password], 
+input[type=number],
+input[type=date],
+input[type=time],
+input[type=color],
+select  {
+    width: 250px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    background-color: var(--color-inactive);
+    color: var(--color-yellow);
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+}
+
+input[type=text]:focus, 
+input[type=password]:focus, 
+input[type=number]:focus,
+input[type=date]:focus,
+input[type=time]:focus,
+input[type=color]:focus,
+textarea:focus,
+select:focus
+ {
+  box-shadow: 0 0 5px var(--color-focus);
+  border: 1px solid var(--color-focus);
+}
+
+textarea {
+  resize: none;
+  overflow: hidden;
+  margin: 8px 0;
+  padding: 12px 20px;
+  width: 250px;
+  height: 43.5px;
+  background-color: var(--color-inactive);
+  color: var(--color-yellow);
+  border: 1px solid #000;
+  border-radius: 4px;
+  outline: none;
+}
+
+select {
+  width: 125px;
+}
+
+
+
+
+input[type=color] {
+  padding: 0;
+  height: 43.5px;
+  width: 43.5px;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 5px 5px;
+}
+input[type="color"]::-webkit-color-swatch {
+  border-radius: 4px;
+}
+
+#steps,
+#dateTime,
+#points {
+  width: 250px;
+}
+
+#points > input[type=number] {
+  width: 49%;
+}
+
+#dateTime input[type=date] {
+  width: 59%;
+  padding-left: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 0px;
+}
+
+#dateTime input[type=time] {
+  width: 39%;
+  padding-left: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 0px;
+}
+
+
+#steps input[type=text] {
+    width: 56%;
+}
+
+#steps input[type=number] {
+  width: 20%;
+  padding: 12px 5px;
+}
+
+
+input[type=reset] {
+    width: 80px;
+    background-color: #aa0000;
+    color: var(--color-background);
+    padding: 14px 20px;
+    margin: 8px 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=reset]:hover {
+  background-color: #f00;
+}
+
+
+
+input[type=submit] {
+    width: 250px;
+    background-color: var(--color-green);
+    color: var(--color-background);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: var(--color-bright-green);
+}
+
+h1 {
+  font-family: 'Mystery Quest', cursive;
+  font-size: 100px;
+  font-weight: normal;
+  background: -webkit-linear-gradient(var(--color-yellow), var(--color-orange));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 50px;
+}
+
+.logo {
+  position: relative;
+  height: 120px;
+  width: 150px;
+  top: 20px;
+  margin-left: 0px;
+  margin-right: -40px;
+}
+
+.logo img {
+  height: inherit;
+}
+
+h2 {
+  font-family: 'Mystery Quest', cursive;
+  font-size: 60px;
+    font-weight: normal;
+  background: -webkit-linear-gradient(var(--color-yellow), var(--color-orange));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 100px;
+}
+
+h3 {
+  font-family: 'Mystery Quest', cursive;
+  font-size: 50px;
+    font-weight: normal;
+  background: -webkit-linear-gradient(var(--color-yellow), var(--color-orange));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}

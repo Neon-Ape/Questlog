@@ -1,0 +1,140 @@
+
+
+.quests {
+  color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #f00;
+}
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0px;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 0px;
+  height: 4px;
+  max-width: 1200px;
+  
+  background: #222; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(right,rgba(0,0,0,0), #222, rgba(0,0,0,0)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(right,rgba(0,0,0,0), #222, rgba(0,0,0,0)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(left,rgba(0,0,0,0), #222, rgba(0,0,0,0)); /*Fx 3.6-15*/
+  background: linear-gradient(to right,rgba(0,0,0,0), #222, rgba(0,0,0,0)); /*Standard*/
+
+}
+
+.quest {
+  display: block;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #111;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  cursor: default;
+  outline: none;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+}
+
+.quest:hover {
+  border-color: #f4cc70;
+
+  background: transparent; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(right,rgba(255,0,0,0), rgba(244,204,112,0.3)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(left,rgba(255,0,0,0), rgba(244,204,112,0.3)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(left,rgba(255,0,0,0), rgba(244,204,112,0.3)); /*Fx 3.6-15*/
+  background: linear-gradient(to left, rgba(255,0,0,0), rgba(244,204,112,0.3)); /*Standard*/
+}
+
+
+
+table.quest{
+  table-layout: fixed;
+  width: 360px;
+  max-width: 360px;
+  border-style: solid;
+  border-color: rgba(0,0,0,0);
+  border-width: 1px;
+}
+
+#questname,
+#questxp,
+#questtoken,
+#questbutton {
+  height: 20px;
+  max-height: 20px;
+}
+
+#questicon {
+  width: 15px;
+  max-width: 15px;
+}
+
+img.open,
+img.active {
+  height: 30px;
+}
+
+img.finished {
+  width: 15px;
+}
+
+
+#questname {
+  color: #fff;
+  width: 200px;
+}
+
+.quest:hover #questname {
+  color: #f4cc70;
+}
+
+#questxp,
+#questtoken,
+#questcreator,
+#questdue {
+  color: #555;
+}
+
+.quest:hover #questxp,
+.quest:hover #questtoken,
+.quest:hover #questcreator,
+.quest:hover #questdue {
+  color: #999;
+}
+
+#questbutton {
+  width: 25px;
+
+}
+
+#questbutton img{
+  display: none;
+}
+
+.quest:hover #questbutton img{
+  display: block;
+}
+
+.quest button {
+  background-color: rgba(0,0,0,0);
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0px 2px;
+  cursor: pointer;
+}
+
+button > img {
+  width: 25px;
+
+}
+

@@ -1,0 +1,33 @@
+img.nav {
+  height: 60px;
+}
+
+img.tokenImg {
+	height: 50px;
+	width: 50px;
+}
+
+a {
+  color: #900;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  position: relative;
+}
+
+a[data]:hover:after {
+  content: attr(data);
+  padding: 4px 8px;
+  width: 100px;
+  color: #555;
+  position: absolute;
+  left: -50%;
+  text-align: center;
+  top: 100%;
+  white-space: nowrap;
+  z-index: 2;
+  border-radius: 4px ;
+  background: #111;
+}

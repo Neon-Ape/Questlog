@@ -1,0 +1,194 @@
+.token.nav {
+    width: 50px;
+    height: 50px;
+}
+
+.token img {
+    position: relative;
+    top: 5%;
+    left: 5%;
+    width: inherit;
+    height: inherit;
+}
+
+.inner {
+    position: relative;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+
+.preview {
+  width: 100px;
+  height: 100px;
+}
+
+.preview img {
+    left: 0;
+}
+
+.preview .inner {
+    left: 0;
+    width: 90%;
+    height: 90%;
+}
+
+/*======================================================
+*       realignment depending on shape
+======================================================*/
+
+.clip-pentagon img {
+    top: 15%;
+}
+
+.clip-cutdiamond img {
+    top: -5%;
+    height: 80%;
+    width: 80%;
+}
+
+.clip-cutdiamond .inner {
+    top: 3%;
+}
+
+.clip-diamond img {
+    top: 15%;
+    height: 75%;
+    width: 75%;
+}
+
+.clip-8burst img {
+    top: 10%;
+    width: 80%;
+    height: 80%;
+}
+
+
+/*===================================================
+*   Shape Polygon Definition
+======================================================*/
+.clip-square {
+    clip-path: inset(5% 5% 5% 5%);
+}
+
+.clip-circle {
+  clip-path: circle(50% at center);
+}
+.clip-pentagon {
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+.clip-hexagon {
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.clip-diamond {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.clip-8burst {
+    clip-path: polygon(50% 0%, 65% 15%, 85% 15%, 85% 35%, 100% 50%, 85% 65%, 85% 85%, 65% 85%, 50% 100%, 35% 85%, 15% 85%, 15% 65%, 0% 50%, 15% 35%, 15% 15%, 35% 15%);
+}
+.clip-cutdiamond {
+    clip-path: polygon(50% 100%, 0% 25%, 25% 0%, 75% 0%, 100% 25%);
+}
+.clip-heart {
+    clip-path: polygon(50% 100%, 15% 70%, 0% 40%, 0% 20%, 7% 7%, 20% 0%, 40% 7%, 50% 20%, 60% 7%, 80% 0%, 93% 7%, 100% 20%, 100% 40%, 85% 70%);
+
+}
+/* =============================================
+* RADIO BUTTONS
+=============================================== */
+
+.radio-img {
+  display: inline-block;
+}
+
+.radio-img  > input { 
+  display:none;
+}
+
+.radio-img  > img,
+.radio-img > div {
+  cursor:pointer;
+  border-radius: 4px;
+  height: 43.5px;
+  width: 43.5px;
+  border: 1px solid rgba(0,0,0,0);
+    outline: none;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+}
+
+.radio-img  > img {
+    border-radius: 50%;
+}
+
+.radio-img > div.shape {
+    border-radius: 0;
+    background: var(--color-inactive);
+}
+
+.radio-img  > input:checked + img{ 
+  box-shadow: 0 0 5px var(--color-focus);
+  border: 1px solid var(--color-focus);
+}
+
+.radio-img > input:checked + div.shape{ 
+  background: var(--color-focus) !important;
+}
+
+/*====================================
+*           Color Picker Tiles
+======================================*/
+.radio-img > .color-container {
+    border: 1px solid #111;
+    border-radius: 50%;
+  overflow: hidden;
+}
+
+.radio-img input:checked + .color-container {
+  box-shadow: 0 0 5px var(--color-focus);
+  border: 1px solid var(--color-focus);
+}
+
+.triangle-topleft {
+  width: 0;
+  height: 0;
+  border-top-width: 30px;
+  border-top-style: solid;
+  border-right: 43.5px solid transparent;
+}
+
+/*=========================================
+*           Circle Alignment
+===========================================*/
+
+.circle-container {
+    position: relative;
+    width: 24em;
+    height: 12em;
+    padding-top: 2.8em;
+    /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
+    border-radius: 50%;
+    margin: 3.5em auto 0;
+}
+
+.circle-container div.layer0 {
+    display: block;
+    position: relative;
+    margin-top: -6em;
+
+}
+
+.circle-container label {
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 4em; height: 4em;
+    margin: -2em;
+}
+
+
